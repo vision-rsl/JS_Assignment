@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+      
+       document.write("<h1>Question 1</h1>") ;
+       document.write("<h2>Explore and Explain Various Methods in console function.  Example in the console</h2>");
+       document.write("<h3>1. console.clear() Used to clear the console</h3>");
+       console.clear();
+       console.group('Question 1'); 
+       document.write("<h3>2. console.log() Used to print the output on the console.</h3>");
+       console.log('hiii, from the console');
+       document.write("<h3>3. console.error() Used to log error message to the console, useful in testing of code.  </h3>  ");
+       console.error("hi, i am error");
+       document.write("<h3>4. console.warn() Used to log warning message to the console. </h3>  ");
+       console.warn("your are been warned")
+       document.write("<h3>5. console.time() and console.timeEnd() Used to record the time spent on a fuction or function block </h3>")
+        console.time('a')
+        let fun = function () {
+          console.log("Counting Time") ; 
+        }
+        let fun1 = function () {
+          console.log("Counting Time.........") ; 
+        }
+        fun();
+        fun1();
+        console.timeEnd('a')
+       document.write("<h3>6. console.table() Used to generate table content</h3>  ")
+       console.table({'a':1, 'b':2}); 
+
+       document.write("<h3>7. console.count() Used to the number that the function hit.</h3>  ")
+       for(let i=0;i<10;i++){ 
+    console.count(i); 
+} 
+       document.write("<h3>8. console.group() and console.groupEnd() allows us to group contents in a separate block  </h3>  ")
+     
+
+       console.group('sample'); 
+       console.log('group');  
+        console.log('group'); 
+  console.log('group'); 
+console.groupEnd('sample'); 
+console.groupEnd('Question 1'); 
+console.group('Question 2'); 
+document.write("<h1>Question 2</h1>") ;
+       document.write("<h2>Difference between var, Let and const. Examples in the console</h2>");
+       document.write("<h3>var declarations are globally scoped or function scoped while let and const are block scoped. var variables can be updated and re-declared within its scope; let variables can be updated but not re-declared; const variables can neither be updated nor re-declared. They are all hoisted to the top of their scope.</h3>") ;
+      var name="Vision";
+      console.log(name);
+      {
+        let name="RSL";
+        console.log(name);
+      }
+      console.log(name);
+
+      const name1="Rushi";
+      console.log('name1')
+      console.groupEnd('Question 2'); 
+   
+
+      console.group('Question 3'); 
+document.write("<h1>Question 3</h1>") ;
+       document.write("<h2>Intro in data types</h2>");
+       document.write("<h3>1. number- any number</h3>")
+       document.write("<h3>2. bigint- numbers beyond +-2^53</h3>")
+       document.write("<h3>3. String- A string may have zero or more characters, there’s no separate single-character type.</h3>")
+       document.write("<h3>4. boolean- true or false</h3>")
+       document.write("<h3>5. null- null value</h3>")
+       document.write("<h3>6. undefined- assigned to the variables whose value is not declared or assigned as NULL</h3>")
+       document.write("<h3>7. object- for more complex data structures. </h3>")
+       document.write("<h3>8. symbol- for unique identifiers.</h3>")
+       document.write("<h3></h3>")
+
+      console.groupEnd('Question 3'); 
+   </script>
+</body>
+</html>
