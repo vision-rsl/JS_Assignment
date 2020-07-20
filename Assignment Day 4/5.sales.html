@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales</title>
+</head>
+<body>
+    <script>
+            const sales=Number(prompt("Enter the sales Done by the employee"))
+
+        let percentage
+        if(sales>=0&&sales<=5000)
+            console.log(`Comission percentage=2 \n Toal Comission earned is ${(sales)/100*2} `);
+        else if(sales>=5001&&sales<=10000)
+        console.log(`Comission percentage=5 \n Toal Comission earned is ${(sales)/100*5} `);
+        else if(sales>=10001&&sales<=20000)
+        console.log(`Comission percentage=7 \n Toal Comission earned is ${(sales)/100*7} `);
+        else if(sales>=20001)
+        console.log(`Comission percentage=10 \n Toal Comission earned is ${(sales)/100*10} `);
+
+        
+    </script>
+</body>
+</html>

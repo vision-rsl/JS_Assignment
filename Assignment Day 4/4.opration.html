@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oprations</title>
+</head>
+<body>
+    <script>
+        const choice=prompt(" 1-Addition\n 2-Subtraction\n 3-Multiplication\n 4-Division\n 5-Square root\n 6-Percentage   ")
+        let num1,num2,result
+        switch(choice){
+                    case "1":
+                        num1=prompt("Enter first number for Addition")
+                        num2=prompt("Enter second number for Addition")
+                        result=Number(num1)+Number(num2)
+                        alert(result)
+                        alert("Please refresh")
+                        break;
+                case "2":
+                    num1=prompt("Enter first number for Subtraction")
+                    num2=prompt("Enter second number for Subtraction")
+                    result=Number(num1)-Number(num2)
+                    alert(result)
+                    alert("Please refresh")
+                 break;
+                case "3":
+                    num1=prompt("Enter first number for Multiplication")
+                    num2=prompt("Enter second number for aMultiplication")
+                    result=Number(num1)*Number(num2)
+                    alert(result)
+                    alert("Please refresh")
+                    break;
+            case "4":
+                num1=prompt("Enter first number for Division")
+                num2=prompt("Enter second number for Division")
+                result=Number(num1)/Number(num2)
+                alert(result)
+                alert("Please refresh")
+                break;
+            case "5":
+                num1=prompt("Enter the number whose square root has to fe found")
+                result=Math.pow(Number(num1),0.5)
+                alert(result)
+                alert("Please refresh")
+                break;
+
+                case "6":
+                    num1=prompt("Enter the x in terms of x%y")
+                    num2=prompt("Enter the y in terms of x%y")
+                    result=Number(num1)*Number(num2)/100
+                    alert(result)
+                    break;
+                    default: alert("Please refresh")
+        }
+    </script>
+</body>
+</html>
