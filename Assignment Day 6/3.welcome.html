@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome-Webpage</title>
+    <style>
+        .color{
+            background-color: black;
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="title"> </h1>
+    
+    <h4 id="time"></h4>
+    <button id='dark' onclick="changecolor()">Dark theme</button>
+
+    
+    <script>
+        let name=prompt("Please enter your name","NAME");
+        title.innerText +=`Welcome ${name}`;
+     
+       let theme=document.getElementById('dark');
+        function changecolor(){
+            if(theme.innerHTML=="Dark theme")
+            {
+                theme.innerHTML="Light theme";
+                document.body.classList.toggle("color");
+            }
+            else{
+                theme.innerHTML="Dark theme";
+                document.body.classList.toggle("color");
+            }
+        
+        }
+        const clocktime=document.getElementById("time");
+        function clock(){
+            let date =new Date();
+            let time= date.toLocaleTimeString();
+            clocktime.innerText=time;
+        }
+        setInterval(clock,1000);
+    </script>
+</body>
+</html>

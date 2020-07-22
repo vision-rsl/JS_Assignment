@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <script type="text/javascript">
+
+        function setbackground()
+        {
+        window.setTimeout( "setbackground()", 5000); 
+        
+        let index = Math.round(Math.random() * 9);
+        
+        let ColorValue = "FFFFFF";
+        if(index == 1) ColorValue = "c70039"; 
+        if(index == 2) ColorValue = "fbfd8a"; 
+        if(index == 3) ColorValue = "900c3f"; 
+        if(index == 4) ColorValue = "a8df65"; 
+        if(index == 5) ColorValue = "79d70f"; 
+        if(index == 6) ColorValue = "74d4c0"; 
+        if(index == 7) ColorValue = "00005c"; 
+        if(index == 8)ColorValue = "f57b51"; 
+        if(index == 9) ColorValue = "e43f5a"; 
+        document.getElementsByTagName("body")[0].style.backgroundColor = "#" + ColorValue;
+        
+        }
+        </script>
+        
+        
+        
+        </head>
+        <body onload="setbackground();"> 
+        </body>
+
+</html>
